@@ -20,6 +20,7 @@ padding-left: 44px;
 justify-self: start;
 align-self: center;
 margin-top: 9px;
+text-decoration-skip-ink: none;
 }
 
 .menu_item {
@@ -68,15 +69,92 @@ font-size: 17px;
 
 .cover {
 margin-bottom: 180px;
-padding: 100px 50px;
+padding: 165px 50px 61px 50px;
 background-image: url("../images/cover.jpg");
+min-height: 757px;
+position: relative;
+display: flex;
+flex-direction: column;
 }
+
+.overlay {
+position: absolute;
+inset: 0;
+background: rgba(0, 0, 0, 0.6);
+z-index: 1;
+}
+
 h1 {
-
+z-index: 5;
+font-family: 'Raleway', sans-serif;
+font-weight: 700;
+font-size: 100px;
+letter-spacing: 0.3em;
+text-transform: uppercase;
+color: #fff;
+text-align: left;
 }
-.description {
 
+.ono {
+position: absolute;
+top: 172px;
+left: 50px;
 }
+
+.tebe {
+position: absolute;
+top: 305px;
+left: 380px;
+}
+
+.nado {
+position: absolute;
+top: 440px;
+left: 663px;
+}
+
+.cover_content {
+position: relative;
+}
+
+.subtitle {
+position: absolute;
+top: 514px;
+word-spacing: 20px;
+z-index: 5;
+font-family: 'Raleway', sans-serif;
+font-weight: 400;
+font-size: 22px;
+letter-spacing: -0.01em;
+text-transform: uppercase;
+color: #fff;
+text-align: center;
+}
+
+.cover_content {
+position: relative;
+z-index: 5;
+}
+
+.button {
+position: relative;
+top: 500px;
+left: 745px;
+width: 255px;
+height: 51px;
+z-index: 5;
+background-color: transparent;
+border: 1px solid #fff;
+font-family: 'Raleway', sans-serif;
+font-weight: 400;
+text-transform: uppercase;
+color: #fff;
+font-size: 22px;
+padding: 11px 30px;
+outline: none;
+box-shadow: none;
+}
+
 .lots {
 margin-bottom: 120px;
 padding: 0 50px 50px 50px;
