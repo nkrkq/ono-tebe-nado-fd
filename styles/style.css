@@ -157,37 +157,255 @@ box-shadow: none;
 
 .lots {
 margin-bottom: 120px;
-padding: 0 50px 50px 50px;
+padding: 10px 20px 50px 20px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
 }
-h2 {
 
+.lots_title {
+font-family: 'Raleway', sans-serif;
+font-weight: 700;
+text-transform: uppercase;
+font-size: 40px;
+align-self: flex-start;
+margin: 0 0 25px 45px;
 }
+
+.lots-card-title {
+position: relative;
+z-index: 3;
+margin-top: 9px;
+margin-left: -3px;
+word-spacing: 4px;
+}
+
+.lots-card-text {
+position: relative;
+z-index: 3;
+font-family: 'Raleway', sans-serif;
+text-transform: none;
+font-size: 18px;
+font-weight: 400px;
+top: -45px;
+margin-left: -5px;
+}
+
+.see_more {
+font-family: 'Raleway', sans-serif;
+text-transform: lowercase;
+text-decoration-skip-ink: none;
+font-weight: 400;
+font-size: 20px;
+margin-left: 45px;
+position: relative;
+top: -8px;
+}
+
 .cards {
-margin-top: 74px;
-padding: 30px;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 28px;
+margin: 0 0 40px 0;
+list-style: none;
+width: 100%;
+max-width: 1200px;
 }
+
+.lots__card-list-item {
+max-width: 355px;
+box-sizing: border-box;
+}
+
+.card-link {
+display: block;
+height: 100%;
+text-decoration-skip-ink: none;
+color: #fff;
+text-transform: uppercase;
+font-size: 18px;
+text-decoration: none;
+}
+
 .lots-card-film {
 background-image: url("../images/card-lot-01.jpg");
-
+position: relative;
+background-size: cover;
+background-position: center;
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+color: #fff;
+width: 100%;
+min-height: 596px;
+padding: 40px 50px;
 }
+
 .lots-card-book {
 background-image: url("../images/card-lot-02.jpg");
+position: relative;
+background-size: cover;
+background-position: center;
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+color: #fff;
+width: 100%;
+min-height: 596px;
+padding: 40px 50px;
 }
+
 .lots-card-picture {
 background-image: url("../images/card-lot-03.jpg");
+position: relative;
+background-size: cover;
+background-position: center;
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+color: #fff;
+width: 100%;
+min-height: 596px;
+padding: 40px 50px;
 }
+
 .about {
-padding: 50px;
+display: grid;
+grid-template-columns: 320px 1fr;
+align-items: start;
 }
-.column-logo {
 
+.about_column_left {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: flex-start;
 }
-.column-text-about {
 
+.about_logo {
+width: 240px;
+height: 240px;
+background-color: black;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-left: 72px;
+margin-top: -25px;
 }
-.social_media {
 
+.about_logo img {
+display: block;
+margin: auto;
+width: 148px;
+height: 114px;
 }
-.footer{
-  padding: 30px 50px;
+
+.about_column_right {
+box-sizing: border-box;
+}
+
+.about_title {
+font-family: 'Raleway', sans-serif;
+text-transform: uppercase;
+margin: 76px 63px 60px;
+font-weight: 700;
+font-size: 40px;
+}
+
+.about_text {
+min-width: 690px;
+font-family: 'Raleway', sans-serif;
+font-weight: 400px;
+font-size: 20px;
+display: flex;
+flex-direction: column;
+margin: 98px 63px 70px;
+gap: 25px;
+}
+
+.footer {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+align-items: center;
+padding: 20px 0;
+}
+
+.location {
+list-style: none;
+display: flex;
+align-items: flex-start;
+flex-direction: column;
+min-width: 400px;
+margin-top: 30px;
+margin-left: -20px;
+}
+
+.footer_location-item {
+font-family: 'Raleway', sans-serif;
+font-weight: 400;
+font-size: 18px;
+list-style: none;
+text-decoration: underline;
+margin-top: 8px;
+}
+
+.footer_location-item_email {
+font-family: 'Raleway', sans-serif;
+font-weight: 400;
+font-size: 18px;
+list-style: none;
+text-decoration: underline;
+margin-top: 4px;
+}
+
+.footer_location-item_address {
+font-family: 'Raleway', sans-serif;
+font-weight: 400;
+font-size: 18px;
+list-style: none;
+text-decoration: none;
+margin-top: 4px;
+}
+
+.footer_menu-link {
+text-decoration-skip-ink: none;
+}
+
+.footer_menu {
+display: flex;
+justify-content: center;
+text-transform: lowercase;
+margin-top: 18px;
+margin-right: 21px;
+}
+
+.footer_menu-list {
+display:flex;
+flex-direction: column;
+align-items: center;
+list-style: none;
+}
+
+.footer_menu-list-item {
+font-family: 'Raleway', sans-serif;
+font-weight: 400px;
+font-size: 18px;
+}
+
+.social-media-list {
+display: flex;
+justify-content: flex-end;
+gap: 48px;
+list-style: none;
+margin: 90px 50px;
+}
+
+.social-media-icon {
+display: block;
+width: 48px;
+height: 48px;
 }
