@@ -1,22 +1,25 @@
-.header{
+.header {
 font-family: 'Raleway', sans-serif;
 font-size: 18px;
 width: 100%;
 min-height: 293px;
 margin: 0 auto;
-padding: 50 50 50 50;
+padding: 50px 50px;
 display: grid;
 grid-template-columns: 1fr min-content 1fr;
 align-items: start;
-justify-items: center;
 box-sizing: border-box;
+}
+
+.body {
+max-width: 1100px;
+margin: 0 auto;
 }
 
 .menu {
 font-family: 'Raleway', sans-serif;
 font-size: 18px;
 margin: 0;
-padding-left: 44px;
 justify-self: start;
 align-self: center;
 margin-top: 9px;
@@ -58,11 +61,11 @@ flex-direction: column;
 align-items: flex-start;
 align-self: center;
 text-align: left;
+padding-left: 190px;
 text-decoration-skip-ink: none;
 font-style: normal;
 font-size: 18px;
 position: relative;
-right: -55px;
 top: 5px;
 gap: 3px;
 }
@@ -114,13 +117,9 @@ top: 440px;
 left: 663px;
 }
 
-.cover_content {
-position: relative;
-}
-
 .subtitle {
 position: absolute;
-top: 514px;
+bottom: 61px;
 word-spacing: 20px;
 z-index: 5;
 font-family: 'Raleway', sans-serif;
@@ -133,14 +132,17 @@ text-align: center;
 }
 
 .cover_content {
-position: relative;
+position: static;
 z-index: 5;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
 }
 
 .button {
-position: relative;
-top: 500px;
-left: 745px;
+position: absolute;
+bottom: 50px;
+right: 50px;
 width: 255px;
 height: 51px;
 z-index: 5;
@@ -190,7 +192,7 @@ font-family: 'Raleway', sans-serif;
 text-transform: none;
 line-height: 1.2;
 font-size: 19px;
-font-weight: 400px;
+font-weight: 400;
 top: -10px;
 word-spacing: 1.3px;
 margin-left: -5px;
@@ -203,7 +205,7 @@ font-family: 'Raleway', sans-serif;
 text-transform: none;
 line-height: 1.25;
 font-size: 19px;
-font-weight: 400px;
+font-weight: 400;
 top: -8px;
 margin-left: -5px;
 }
@@ -327,7 +329,6 @@ border-radius: 50%;
 display: flex;
 align-items: center;
 justify-content: center;
-margin-left: 72px;
 margin-top: -25px;
 }
 
@@ -353,11 +354,11 @@ font-size: 40px;
 .about_text {
 min-width: 690px;
 font-family: 'Raleway', sans-serif;
-font-weight: 400px;
+font-weight: 400;
 font-size: 20px;
 display: flex;
 flex-direction: column;
-margin: 98px 63px 70px;
+margin: 0 0 70px 0;
 gap: 25px;
 }
 
@@ -416,8 +417,7 @@ text-decoration-skip-ink: none;
 display: flex;
 justify-content: center;
 text-transform: lowercase;
-margin-top: 18px;
-margin-right: 4px;
+margin-top: 38px;
 }
 
 .footer_menu-list {
@@ -438,7 +438,7 @@ display: flex;
 justify-content: flex-end;
 gap: 48px;
 list-style: none;
-margin: 90px 50px;
+margin: 90px 50px 0 0;
 }
 
 .social-media-icon {
