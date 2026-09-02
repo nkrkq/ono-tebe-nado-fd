@@ -1,1 +1,0 @@
-https://github.com/nkrkq/ono-tebe-nado-fd.git
