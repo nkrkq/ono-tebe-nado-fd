@@ -129,6 +129,7 @@ margin-left: 35px;
 .nado {
 display: block;
 position: relative;
+align-self: flex-start;
 left: 615px;
 top: 20px;
 }
@@ -275,7 +276,6 @@ max-width: 1200px;
 
 .lots__card-list-item {
 max-width: 338px;
-min-width: 338px;
 box-sizing: border-box;
 }
 
